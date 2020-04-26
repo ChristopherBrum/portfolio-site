@@ -238,6 +238,10 @@ nav { display: none; }
   margin-right: 2em;
 }
 
+.about-me__body {
+  text-align: justify;
+}
+
 
 @media (min-width: 600px) {
   .about-me {
