@@ -142,12 +142,15 @@ header {
 
 .logo {
   max-width: 200px;
+  margin-left: -35px;
+  margin-top: -10px;
 }
 
 .nav {
   position: fixed;
   background: var(--clr-dark);
   color: var(--clr-light);
+  opacity: .99;
   top: 0;
   bottom: 0;
   right: 0;
@@ -265,7 +268,7 @@ header {
     
   .intro__img {
     grid-area: img;
-    min-width: 250px;
+    min-width: 300px;
     position: relative;
     z-index: 2;
     border-radius: 3px;
@@ -468,5 +471,19 @@ header {
 
 .social-list__link {
   padding: 0;
+}
+
+  /* Portfolio Item Individual */
+  
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
