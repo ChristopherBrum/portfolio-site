@@ -242,12 +242,25 @@ header {
 
   /*  Intro section  */
 
+.title__bg-image {
+  position: absolute;
+  z-index: -5;
+  top: -100px;
+}
+
+.intro-div {
+  position: relative;
+  background-image: url(../images/chris-couch.jpg);
+  background-size: cover;
+}
+
 .intro {
   position: relative;
 }
 
 .intro__img {
   box-shadow: var(--bs);
+  display: none;
 }
 
 .section__subtitle--intro {
