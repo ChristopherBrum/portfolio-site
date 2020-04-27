@@ -100,6 +100,20 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
+/* #section__title {
+  margin-left: 2em;
+  text-align: end;
+}
+
+#home {
+  position: relative;
+  top: 4rem;
+
+}
+
+.title-span {
+  font-size: .6em;
+} */
 
 .section__title {
   margin-bottom: .25em;
@@ -138,6 +152,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  height: 65px;
 }
 
 .logo {
@@ -217,6 +232,7 @@ header {
 .hamburger {
   display: block;
   position: relative;
+  margin-top: 8px;
 }
 
 .hamburger,
@@ -242,12 +258,23 @@ header {
 
   /*  Intro section  */
 
-.intro {
-  position: relative;
+.title__bg-image {
+  position: absolute;
+  z-index: -5;
+  top: -100px;
 }
 
-.intro__img {
-  box-shadow: var(--bs);
+.intro-div {
+  position: relative;
+  background-image: url(../images/chris-couch3.jpg);
+  background-size: cover;
+  overflow: hidden;
+  direction: ltr;
+}
+
+.intro {
+  position: relative;
+  height: 90vh;
 }
 
 .section__subtitle--intro {
@@ -261,8 +288,8 @@ header {
     margin: 0 auto;
     grid-column-gap: 1em;
     grid-template-areas: 
-        "img title"
-        "img subtitle";
+        "title img"
+        "subtitle img";
     grid-template-columns: min-content max-content;
   }
     
@@ -285,14 +312,13 @@ header {
   }
 }
 
-
 /*  My services section  */
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url(../images/services-bg.jpg);
+  /* background-image: url(../images/services-bg.jpg);
   background-size: cover;
-  background-blend-mode: multiply;
+  background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
 }
