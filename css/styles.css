@@ -120,12 +120,8 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .title-span {
-  font-weight: var(--fw-reg);
-  font-family: var(--ff-primary);
-}
-
-.title-last-name {
-  font-size: var(--fs-h1);  
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
 }
 
 .section__subtitle {
@@ -306,6 +302,34 @@ svg {
 
 .svg-div {
   position: relative;
+}
+
+@media (min-width: 600px) {
+  .title-span {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+  }
+
+  .section__title--intro {
+    position: absolute;
+    background: transparent;
+    top: .6em;
+    right: .125em;
+    font-size: 9vw;
+  }
+
+  #subtitle__intro {
+    position: absolute;
+    top: 10.5em;
+    padding-right: 2em;
+    margin: 0;
+    font-size: 3vw;
+  }
+
+  .svg-div {
+    margin-top: -15%;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 600px) {
