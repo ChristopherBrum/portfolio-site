@@ -15,7 +15,7 @@
   
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #91572a;
   
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -101,7 +101,8 @@ h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
 .section__title {
-  margin-bottom: .25em;
+  margin: .5em;
+  margin-bottom: .2em;
 }
 
 .section__title--intro {
@@ -110,11 +111,19 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--intro strong {
   display: block;
+  text-align: end;
+}
+
+.title-span {
+  font-size: var(--fs-h2);
+  text-align: end;
 }
 
 .section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
+  width: 100%;
+  text-align: end;
 }
 
 .section__subtitle--intro,
@@ -249,15 +258,12 @@ header {
   top: -100px;
 }
 
-.intro__bg {
-
-}
-
-.intro__bg-img {
-}
-
 .section__subtitle--intro {
   display: inline-block;
+}
+
+.intro {
+  padding: 0 1em;
 }
 
 @media (min-width: 600px) {
