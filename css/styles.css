@@ -15,8 +15,10 @@
   
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #91572a;
+  --clr-accent: #8DB48E;
   
+  /* OG-> 91572a CONTENDERS-> 8DA242 8DB48E D29849*/
+
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -43,7 +45,7 @@ html {
 }
 
 body {
-  background: var(--clr-light);
+  background: var(--clr-darker);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -71,7 +73,7 @@ strong { font-weight: var(--fw-bold) }
 
 .btn {
   display: inline-block;
-  padding: .5em 2.5em;
+  padding: .75em 3em;
   background: var(--clr-accent);
   color: var(--clr-light);
   text-decoration: none;
@@ -81,6 +83,8 @@ strong { font-weight: var(--fw-bold) }
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  box-shadow: var(--bs);
+  margin-top: -2em;
 }
 
 .btn:hover {
@@ -113,8 +117,16 @@ h3 { font-size: var(--fs-h3) }
   text-align: end;
 }
 
-.section__title--about {
+.section__title--work {
+  color: var(--clr-accent);
   margin: 1em 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section__title--about {
+  position: relative;
+  z-index: 1;
 }
 
 .my-services,
@@ -163,12 +175,6 @@ header {
   justify-content: space-between;
   padding: 1em;
   height: 50px;
-}
-
-.logo {
-  max-width: 200px;
-  margin-left: -40px;
-  margin-top: -15px;
 }
 
 .nav {
@@ -285,8 +291,14 @@ header {
   padding: 0;
 }
 
+  /* Curvy SVG Section */
+
 svg {
   margin: 0;
+}
+
+.svg-div {
+  position: relative;
 }
 
 .svg-accent-top {
@@ -309,8 +321,43 @@ svg {
   z-index: -1;
 }
 
-.svg-div {
+.dark-filler {
+  height: 4em;
+  width: 100%;
+  background: var(--clr-dark);
+  position: absolute;
+  top: -60px;
+  z-index: 1;
+}
+
+.svg-dark-upsidedown {
+  background: var(--clr-dark);
+  margin-top: 0;
+}
+
+.svg-accent-upsidedown {
+  background: var(--clr-accent);
   position: relative;
+  z-index: -1;
+  top: 3.5em;
+}
+
+.svg-div-3 {
+  margin-bottom: -1.75em;
+}
+
+.svg-div-2,
+.svg-div-3,
+.svg-div-4 {
+  position: relative;
+  margin-top: 3em;
+  z-index: 1;
+}
+
+@media (min-width: 800px) {
+  .svg-accent-upsidedown {
+    top: 3.25em;
+  }
 }
 
 @media (min-width: 600px) {
@@ -336,9 +383,13 @@ svg {
   }
 
   .svg-div {
-    margin-top: -15%;
+    margin-top: -11%;
     z-index: 1;
   }
+
+  .svg-div-3 {
+    margin-top: 0;
+  } 
 
   .intro {
     display: grid;
@@ -376,6 +427,7 @@ svg {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+  margin-bottom: 0;
 }
 
 .section__title--services {
@@ -412,6 +464,7 @@ svg {
   background: var(--clr-accent);
   position: relative;
   margin: 3em auto;
+  box-shadow: var(--bs);
 }
 #hexagon:before {
   content: "";
@@ -472,7 +525,6 @@ svg {
   }
 }
 
-
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
@@ -527,13 +579,9 @@ svg {
 .my-work {
   background-color: var(--clr-dark);
   color: var(--clr-light);
-  text-align: center;
-}
-
-.my-work {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
   text-align: center;   
+  padding: 0;
+  padding-top: 3em;
 }
 
 .portfolio {
@@ -542,6 +590,8 @@ svg {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 1000px; 
   margin: 0 auto;
+  padding: 1em;
+  padding-bottom: 3em;
 }
 
 .portfolio__item {
@@ -574,6 +624,7 @@ svg {
   text-align: center;
   padding: 2.5em 0;
   font-size: var(--fs-h3);
+  margin-top: -2em;
 }
 
 .footer a { 
