@@ -15,8 +15,10 @@
   
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #91572a;
+  --clr-accent: #D29849;
   
+  /* OG-> 91572a CONTENDERS-> 7DA2A9 3F6844 849531 8DA242 8DB48E D29849*/
+
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -43,7 +45,7 @@ html {
 }
 
 body {
-  background: var(--clr-light);
+  background: var(--clr-darker);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -117,6 +119,11 @@ h3 { font-size: var(--fs-h3) }
   margin: 1em 0;
 }
 
+.section__title--work {
+  color: var(--clr-accent);
+  margin: 1em 0;
+}
+
 .my-services,
 .title-span {
   font-size: var(--fs-h3);
@@ -163,12 +170,6 @@ header {
   justify-content: space-between;
   padding: 1em;
   height: 50px;
-}
-
-.logo {
-  max-width: 200px;
-  margin-left: -40px;
-  margin-top: -15px;
 }
 
 .nav {
@@ -336,7 +337,7 @@ svg {
   }
 
   .svg-div {
-    margin-top: -15%;
+    margin-top: -11%;
     z-index: 1;
   }
 
