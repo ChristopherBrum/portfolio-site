@@ -131,12 +131,18 @@ h3 { font-size: var(--fs-h3) }
   text-align: end;
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--intro {
   background: transparent;
   color: var(--clr-dark);
   padding: 0 1em 2em 1em;
   font-family: var(--ff-secondary);
+}
+
+.section__subtitle--about {
+  font-family: var(--ff-secondary);
+  background: var(--clr-accent);
+  color: var(--clr-light);
+  margin: 1em 0;
 }
 
 .section__subtitle--work {
@@ -304,6 +310,12 @@ svg {
   position: relative;
 }
 
+@media (min-width: 800px) {
+  header {
+    height: 60px;
+  }
+}
+
 @media (min-width: 600px) {
   .title-span {
     font-family: var(--ff-secondary);
@@ -330,9 +342,7 @@ svg {
     margin-top: -15%;
     z-index: 1;
   }
-}
 
-@media (min-width: 600px) {
   .intro {
     display: grid;
     width: min-content;
