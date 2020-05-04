@@ -84,7 +84,8 @@ strong { font-weight: var(--fw-bold) }
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
   box-shadow: var(--bs);
-  margin-top: -2em;
+  /* margin-top: 3em;  
+  margin-bottom: -3em; */
 }
 
 .btn:hover {
@@ -125,8 +126,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__title--about {
-  position: relative;
-  z-index: 1;
+  margin-top: 1em;
 }
 
 .my-services,
@@ -326,8 +326,8 @@ svg {
   width: 100%;
   background: var(--clr-dark);
   position: absolute;
-  top: -60px;
-  z-index: 1;
+  top: -60px; 
+  z-index: -1;
 }
 
 .svg-dark-upsidedown {
@@ -427,7 +427,7 @@ svg {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
-  margin-bottom: 0;
+  /* margin-bottom: -50px; */
 }
 
 .section__title--services {
@@ -443,10 +443,6 @@ svg {
   margin: 0.5em auto 1em;
   background: var(--clr-light);
   opacity: 0.25;
-}
-
-.services {
-  margin-bottom: 4em;
 }
 
 .service {
