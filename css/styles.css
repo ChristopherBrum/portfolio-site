@@ -536,7 +536,6 @@ svg {
   text-align: justify;
 }
 
-
 @media (min-width: 600px) {
   .about-me {
     display: grid;
@@ -581,13 +580,13 @@ svg {
 }
 
 .portfolio {
-  display: grid;
+  /* display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 1000px; 
   margin: 0 auto;
   padding: 1em;
-  padding-bottom: 3em;
+  padding-bottom: 3em; */
 }
 
 .portfolio__item {
@@ -596,6 +595,7 @@ svg {
 }
 
 .portfolio__img {
+  max-width: 600px;
   transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
