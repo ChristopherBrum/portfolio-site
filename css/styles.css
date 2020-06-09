@@ -601,11 +601,13 @@ svg {
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
   margin: 0 auto;
+  background: transparent;
 }
 
 @media (min-width: 600px) {
   .portfolio__img {
     width: 800px;
+    background: transparent;
   }
 }
 
