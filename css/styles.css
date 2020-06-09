@@ -607,6 +607,7 @@ svg {
 @media (min-width: 600px) {
   .portfolio__img {
     width: 800px;
+    background: transparent;
   }
 }
 
